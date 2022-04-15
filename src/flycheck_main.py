@@ -2,7 +2,7 @@ import functools
 import yt_dlp
 from typing import Set
 from typing import List
-from typing import Calla
+from typing import Callable
 
 
 def compose(*functions):
