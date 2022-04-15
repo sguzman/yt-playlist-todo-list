@@ -69,6 +69,7 @@ def build_prog(a: A) -> Z:
 
 def main() -> None:
     print('hi')
+    
     print('bye')
 
 
