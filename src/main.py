@@ -36,7 +36,6 @@ def make_markdown_table(array):
     return markdown + "\n"
 
 
-
 def build_vid_url(s: str) -> str:
     return f'https://www.youtube.com/watch?v={id}'
 
