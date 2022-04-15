@@ -50,7 +50,6 @@ def ydl_opts() -> Set[str]:
         '--get-id'
     }
 
-
 A = str
 Z = str
 def build_prog(a: A) -> Z:
