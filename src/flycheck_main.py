@@ -62,7 +62,7 @@ def init() -> A:
 
 def pipe(f: Callable, in_arg):
     idx: int = -1
-    output = f(in_arg)
+    out_arg = f(in_arg)
 
 
     def p():
