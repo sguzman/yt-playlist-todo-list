@@ -63,7 +63,6 @@ def init() -> A:
 def pipe(f: Callable, arg):
     idx: int = 0
 
-
     def p():
         print('')
 
