@@ -77,7 +77,8 @@ def pipe(t: Tuple[Callable, int]) -> Callable:
 def build_prog() -> Callable:
     prog: List[Callable] = [
         lambda x: x.split('/'),
-        lambda x: x[2]
+        lambda x: x[2],
+        lambda x: 
     ]
     idx = list(range(len(prog)))
     idx.reverse()
