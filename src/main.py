@@ -1,4 +1,5 @@
 import yt_dlp
+from typing import Set
 
 
 def make_markdown_table(array):
@@ -33,6 +34,10 @@ def make_markdown_table(array):
         markdown += "\n"
 
     return markdown + "\n"
+
+
+
+def ydl_jopts() -> Set[str]:
 
 
 def main() -> None:
