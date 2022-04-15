@@ -78,7 +78,7 @@ def build_prog() -> Callable:
     prog: List[Callable] = [lambda x: (x, ydl_opts()), lambda x: x]
     idx = reverse(range(len(prog)))
     app = zip()
-    wrap = list(map(pipe, enumerate(prog)))
+    wrap = list(map(pipe, (prog)))
 
     return compose(*wrap)
 
