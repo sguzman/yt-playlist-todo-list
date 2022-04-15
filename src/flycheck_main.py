@@ -69,7 +69,7 @@ def pipe(f: Callable, in_arg):
         idx += 1
         print(idx, f, in_arg, out_arg)
 
-        retu
+        return out_arg
 
 
 def build_prog() -> Callable[[A], Z]:
