@@ -6,7 +6,8 @@ from typing import List
 
 def compose(*functions):
     return functools.reduce(
-        lambda f, g: lambda x: f(g(x)), functions, lambda x: x)
+        lambda f, g: lambda x: f(g(x)),
+        functions, lambda x: x)
 
 
 def make_markdown_table(array):
