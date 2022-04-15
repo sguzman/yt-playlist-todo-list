@@ -60,8 +60,11 @@ def init() -> A:
     return sys.argv[1]
 
 
-def build_prog() -> Callable[A, A]:
-    prog = [lambda x: x, lambda x: x]
+def build_prog() -> Callable[A, Z]:
+    prog  = [
+        lambda x: x,
+        lambda x: x
+    ]
 
     return compose(prog)
 
