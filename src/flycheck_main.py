@@ -77,7 +77,7 @@ def pipe(f: Callable) -> Callable:
 def build_prog() -> Callable:
     prog: List[Callable] = [
         lambda a: (a, {'--get-id'}),
-        lambda
+        lambda 
     ]
     wrap = list(map(pipe, prog))
 
