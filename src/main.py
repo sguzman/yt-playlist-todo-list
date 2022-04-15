@@ -1,3 +1,4 @@
+import functools
 import yt_dlp
 from typing import Set
 
@@ -45,6 +46,8 @@ def ydl_opts() -> Set[str]:
         '--get-id'
     }
 
+
+def buid
 
 def main() -> None:
     print('hi')
