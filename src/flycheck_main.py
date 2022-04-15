@@ -36,6 +36,9 @@ def make_markdown_table(array):
 
 
 
+
+
+
 def main() -> None:
     print('hi')
     print('bye')
