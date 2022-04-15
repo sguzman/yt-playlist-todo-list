@@ -1,8 +1,15 @@
+import functools
+from typing import Callable, List, Set, Tuple
+
 import yt_dlp
 
 
-def make_markdown_table(array):
+def compose(*functions):
+    return functools.reduce(lambda f, g: lambda x: f(g(x)), functions,
+                            lambda x: x)
 
+
+def make_markdown_table(array):
     """ Input: Python list with rows of table as lists
                First element as header.
         Output: String to put into a .md file
@@ -35,8 +42,51 @@ def make_markdown_table(array):
     return markdown + "\n"
 
 
+def build_vid_url(s: str) -> str:
+    return f'https://www.youtube.com/watch?v={id}'
+
+
+def ydl_opts() -> Set[str]:
+    return {'--get-id'}
+
+
+A = str
+Z = str
+
+
+def init() -> A:
+    import sys
+
+    return sys.argv[1]
+
+
+def pipe(f: Callable) -> Callable:
+    idx: int = -1
+
+    def p(in_arg):
+        nonlocal idx
+        idx += 1
+        out_arg = f(in_arg)
+        print(idx, in_arg, out_arg, f)
+
+        return out_arg
+
+    return p
+
+
+def build_prog() -> Callable[[A], Z]:
+    prog: List[Callable] = [lambda x: x]
+    wrap = list(map(pipe, prog))
+
+    return compose(*wrap)
+
+
 def main() -> None:
     print('hi')
+
+    arg = init()
+    prog = build_prog()
+    prog(arg)
     print('bye')
 
 
