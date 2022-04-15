@@ -61,7 +61,8 @@ Z = str
 
 def init() -> A:
     import sys
-    
+
+    re
 
 
 def build_prog(a: A) -> Z:
