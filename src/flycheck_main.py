@@ -59,7 +59,7 @@ A = str
 Z = str
 
 
-def init(1):
+def init():
 
 
 def build_prog(a: A) -> Z:
