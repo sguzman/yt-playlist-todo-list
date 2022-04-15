@@ -44,7 +44,6 @@ def make_markdown_table(array):
 def build_vid_url(s: str) -> str:
     return f'https://www.youtube.com/watch?v={id}'
 
-
 def ydl_opts() -> Set[str]:
     return {
         '--get-id'
