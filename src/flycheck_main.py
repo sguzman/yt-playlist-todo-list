@@ -74,7 +74,7 @@ def pipe(f: Callable) -> Callable:
 
 
 def build_prog() -> Callable[[A], Z]:
-    prog: List[Callable] = []
+    prog: List[Callable] = [L]
     wrap = map(pipe, prog)
 
     return compose(wrap)
