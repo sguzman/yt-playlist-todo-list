@@ -77,7 +77,7 @@ def build_prog() -> Callable[[A], Z]:
     prog: List[Callable] = [lambda x: x]
     wrap = list(map(pipe, prog))
 
-    return compose(wrap)
+    return compose(*wrap)
 
 
 def main() -> None:
