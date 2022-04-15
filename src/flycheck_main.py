@@ -59,6 +59,7 @@ A = str
 Z = str
 
 
+
 def build_prog(a: A) -> Z:
     prog: List[str] = [
         lambda a: a
