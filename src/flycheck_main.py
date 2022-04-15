@@ -67,7 +67,7 @@ def pipe(t: Tuple[Callable, int]) -> Callable:
         n = t[1]
 
         out_arg = f(in_arg)
-        print(n, in_arg, out_arg, f, sep='\n\t')
+        print(n, ''in_arg, out_arg, f, sep='\n\t')
 
         return out_arg
 
