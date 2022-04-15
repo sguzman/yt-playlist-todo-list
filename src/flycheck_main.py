@@ -1,3 +1,4 @@
+import yt
 
 def main() -> None:
     print('hi')
