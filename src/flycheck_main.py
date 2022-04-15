@@ -64,6 +64,7 @@ def pipe(f: Callable) -> Callable:
     idx: int = -1
     def p(in_arg):
         idx += 1
+        out_ar
         print(idx, f, in_arg, out_arg)
 
         return out_arg
