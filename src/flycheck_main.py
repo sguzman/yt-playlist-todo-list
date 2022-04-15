@@ -62,7 +62,7 @@ def init() -> A:
 
 def pipe(f: Callable, in):
     idx: int = -1
-    
+    outpu
 
 
     def p():
