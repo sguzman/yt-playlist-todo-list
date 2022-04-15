@@ -76,7 +76,6 @@ def pipe(t: Tuple[Callable, int]) -> Callable:
 
 def build_prog() -> Callable:
     prog: List[Callable] = [lambda x: (x, ydl_opts()), lambda x: x]
-    idx_
     idx = reverse(range(len(prog)))
     app = zip(prog, idx)
     wrap = list(map(pipe, app))
