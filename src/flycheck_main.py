@@ -60,7 +60,7 @@ def init() -> A:
     return sys.argv[1]
 
 
-def build_prog() -> Callable[A, Z]:
+def build_prog() -> Callable[[], Z]:
     prog: Tuple[Callable[[A], Z]] = (lambda x: x)
 
     return compose(prog)
