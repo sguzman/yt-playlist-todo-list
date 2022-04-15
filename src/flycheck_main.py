@@ -72,7 +72,7 @@ def pipe(f: Callable, in_arg):
         return out_arg
 
 
-    return 
+    return ou
 
 
 def build_prog() -> Callable[[A], Z]:
