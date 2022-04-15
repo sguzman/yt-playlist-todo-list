@@ -13,7 +13,6 @@ def make_markdown_table(array):
          ["Mary", 21, 5'7]]
     """
 
-
     markdown = "\n" + str("| ")
 
     for e in array[0]:
@@ -34,6 +33,7 @@ def make_markdown_table(array):
         markdown += "\n"
 
     return markdown + "\n"
+
 
 
 def main() -> None:
