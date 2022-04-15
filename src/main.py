@@ -60,11 +60,11 @@ def init() -> A:
     return sys.argv[1]
 
 
-def pipe(t: Tuple[int, Callable]) -> Callable:
+def pipe(t: Tuple[Callable, int]) -> Callable:
 
     def p(in_arg):
-        f = t[1]
-        n = t[0]
+        f = t[0]
+        n = t[1]
 
         out_arg = f(in_arg)
         print(n, in_arg, out_arg, f, sep='\n\t')
@@ -76,7 +76,9 @@ def pipe(t: Tuple[int, Callable]) -> Callable:
 
 def build_prog() -> Callable:
     prog: List[Callable] = [lambda x: (x, ydl_opts()), lambda x: x]
-    wrap = list(map(pipe, enumerate(prog)))
+    idx = reverse(range(len(prog)))
+    app = zip(prog, idx)
+    wrap = list(map(pipe, app))
 
     return compose(*wrap)
 
