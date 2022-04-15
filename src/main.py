@@ -60,6 +60,19 @@ def init() -> A:
     return sys.argv[1]
 
 
+def pipe(f: Callable, in_arg):
+    idx: int = -1
+    out_arg = f(in_arg)
+
+    def p():
+        idx += 1
+        print(idx, f, in_arg, out_arg)
+
+        return out_arg
+
+    return p
+
+
 def build_prog() -> Callable[[A], Z]:
     prog: Tuple[Callable[[A], Z]] = (lambda x: x)
 

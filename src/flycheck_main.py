@@ -64,13 +64,11 @@ def pipe(f: Callable, in_arg):
     idx: int = -1
     out_arg = f(in_arg)
 
-
     def p():
         idx += 1
         print(idx, f, in_arg, out_arg)
 
         return out_arg
-
 
     return p
 
