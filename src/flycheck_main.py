@@ -48,7 +48,6 @@ def build_vid_url(s: str) -> str:
 
 def ydl_opts() -> Set[str]:
     return {'format': 'bestaudio'}
-    return {'--get-id'}
 
 
 A = str
@@ -77,8 +76,7 @@ def pipe(f: Callable) -> Callable:
 
 def build_prog() -> Callable:
     prog: List[Callable] = [
-        lambda x: (x, ydl_opts()),
-        lambda x: (x[0], yt_dlp.YoutubeDL(x[1]))
+        lambda x: (x, ydl_opts()), lambda x: (x[0], yt_dlp.YoutubeDL(x[1]))
     ]
     wrap = list(map(pipe, prog))
 
