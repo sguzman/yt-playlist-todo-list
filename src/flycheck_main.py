@@ -64,6 +64,7 @@ def pipe(f: Callable, arg):
     idx: int = -1
 
     def p():
+        
         print()
 
 
