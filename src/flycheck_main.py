@@ -60,8 +60,9 @@ def init() -> A:
     return sys.argv[1]
 
 
-def pipe(f: Tuple[Callable,]) -> Callable:
+def pipe(f: Tuple[Callable,int]) -> Callable:
     def p(in_arg):
+        
         out_arg = f(in_arg)
         print(n, in_arg, out_arg, f, sep='\n\t')
 
