@@ -51,6 +51,7 @@ def ydl_opts() -> Set[str]:
 
 
 A = str
+Z = 
 def build_prog():
 
 def main() -> None:
