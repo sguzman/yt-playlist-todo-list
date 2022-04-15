@@ -47,6 +47,7 @@ def build_vid_url(s: str) -> str:
 
 
 def ydl_opts() -> Set[str]:
+    
     return {'--get-id'}
 
 
