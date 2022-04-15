@@ -66,7 +66,8 @@ def init() -> A:
 
 
 def build_prog(a: A) -> Z:
-    prog: Tuple[str] = [
+    prog: Tuple[
+    ] = [
         lambda a: a
     ]
 
