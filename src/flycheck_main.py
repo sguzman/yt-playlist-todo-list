@@ -4,7 +4,8 @@ from typing import Set
 
 
 def compose(*functions):
-    return functools.reduce(lambda f, g: lambda x: f(g(x)), functions, lambda x: x)
+    return functools
+.reduce(lambda f, g: lambda x: f(g(x)), functions, lambda x: x)
 
 
 def make_markdown_table(array):
@@ -43,7 +44,6 @@ def make_markdown_table(array):
 
 def build_vid_url(s: str) -> str:
     return f'https://www.youtube.com/watch?v={id}'
-
 
 def ydl_opts() -> Set[str]:
     return {
