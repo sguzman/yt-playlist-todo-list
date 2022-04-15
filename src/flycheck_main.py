@@ -37,7 +37,7 @@ def make_markdown_table(array):
 
 
 
-def build_vid():
+def build_vid_url():
 
 
 def ydl_jopts() -> Set[str]:
