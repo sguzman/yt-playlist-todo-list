@@ -60,7 +60,7 @@ def init() -> A:
     return sys.argv[1]
 
 
-def pipe(f: Callable, ):
+def pipe(f: Callable, arg):
 
 
 def build_prog() -> Callable[[A], Z]:
