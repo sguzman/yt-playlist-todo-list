@@ -61,7 +61,7 @@ def init() -> A:
 
 
 def build_prog() -> Callable[A, Z]:
-    prog: Tuple[Callable[A, Z]] = (lambda x: x)
+    prog = [lambda x: x, lambda x: x]
 
     return compose(prog)
 
