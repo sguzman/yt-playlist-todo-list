@@ -56,8 +56,6 @@ def ydl_opts() -> Set[str]:
 
 
 A = str
-
-
 Z = str
 
 
