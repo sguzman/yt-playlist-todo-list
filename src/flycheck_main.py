@@ -1,4 +1,5 @@
 import yt_dlp
+frm
 
 
 def make_markdown_table(array):
@@ -36,7 +37,7 @@ def make_markdown_table(array):
 
 
 
-def ydl_jopts() -> Set[st]:
+def ydl_jopts() -> Set[str]:
 
 
 def main() -> None:
