@@ -76,7 +76,7 @@ def pipe(f: Callable) -> Callable:
 
 def build_prog() -> Callable:
     prog: List[Callable] = [
-        lambda x: (x, yt_dlp),
+        lambda x: (x, yt_),
         lambda x: yt_dlp.YoutubeDL(x)
     ]
     wrap = list(map(pipe, prog))
