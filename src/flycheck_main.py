@@ -60,9 +60,9 @@ def init() -> A:
     return sys.argv[1]
 
 
-def pipe(f: Callable, in):
+def pipe(f: Callable, input):
     idx: int = -1
-    outpu
+    output
 
 
     def p():
