@@ -36,7 +36,7 @@ def make_markdown_table(array):
 
 
 
-def ydl_jopts() -> :
+def ydl_jopts() -> Set[st]:
 
 
 def main() -> None:
