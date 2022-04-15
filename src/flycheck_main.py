@@ -61,7 +61,7 @@ def init() -> A:
 
 
 def build_prog() -> Callable[A, Z]:
-    prog:  = (lambda x: x)
+    prog  = (lambda x: x)
 
     return compose(prog)
 
@@ -73,7 +73,7 @@ def main() -> None:
     prog = build_prog()
     prog(arg)
     print('bye')
-s
+
 
 if __name__ == '__main__':
     main()
