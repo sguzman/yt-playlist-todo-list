@@ -1,5 +1,6 @@
 import yt_dlp
 
+
 def make_markdown_table(array):
 
     """ Input: Python list with rows of table as lists
