@@ -61,6 +61,7 @@ def init() -> A:
 
 
 def pipe(f: Callable, arg):
+    
 
 
 def build_prog() -> Callable[[A], Z]:
