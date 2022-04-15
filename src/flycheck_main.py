@@ -73,7 +73,7 @@ def main() -> None:
     prog = build_prog()
     prog(arg)
     print('bye')
-
+s
 
 if __name__ == '__main__':
     main()
