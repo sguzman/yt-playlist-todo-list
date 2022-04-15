@@ -38,7 +38,7 @@ def make_markdown_table(array):
 
 
 def build_vid_url(id: str) -> str:
-    return f'https://www.youtube.com/watch?v=IG-aN3VHr1I&'
+    return f'https://www.youtube.com/watch?v='
 
 
 def ydl_jopts() -> Set[str]:
