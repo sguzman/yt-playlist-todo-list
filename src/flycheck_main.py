@@ -4,8 +4,7 @@ from typing import Set
 
 
 def compose(*functions):
-    return functools.
-reduce(lambda f, g: lambda x: f(g(x)), functions, lambda x: x)
+    return functools.reduce(lambda f, g: lambda x: f(g(x)), functions, lambda x: x)
 
 
 def make_markdown_table(array):
@@ -51,7 +50,8 @@ def ydl_opts() -> Set[str]:
     }
 
 
-def buid
+
+def build_prog():
 
 def main() -> None:
     print('hi')
