@@ -38,6 +38,9 @@ def make_markdown_table(array):
 
 
 def ydl_jopts() -> Set[str]:
+    return {
+        '--get-id'
+    }
 
 
 def main() -> None:
