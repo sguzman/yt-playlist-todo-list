@@ -79,6 +79,7 @@ def build_prog() -> Callable:
         lambda a: (
             a,
             {
+                '--'
             }
         )
     ]
