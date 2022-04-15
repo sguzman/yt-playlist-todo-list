@@ -59,6 +59,12 @@ A = str
 Z = str
 
 
+def init() -> A:
+    import sys
+
+    return sys.argv[1]
+
+
 def build_prog(a: A) -> Z:
     prog: List[str] = [
         lambda a: a
@@ -69,6 +75,9 @@ def build_prog(a: A) -> Z:
 
 def main() -> None:
     print('hi')
+
+    prog = build_prog()
+
     print('bye')
 
 
