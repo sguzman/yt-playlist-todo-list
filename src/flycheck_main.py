@@ -79,7 +79,7 @@ def build_prog() -> Callable:
         lambda x: x.split('/'),
         lambda x: x[2],
         lambda x: x.split('.'),
-        lambda x: 
+        lambda x: x
     ]
     idx = list(range(len(prog)))
     idx.reverse()
