@@ -64,7 +64,7 @@ def build_prog(a: A) -> Z:
         lambda a: a
     ]
 
-    comp;
+    compo
 
 
 def main() -> None:
