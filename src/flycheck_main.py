@@ -3,4 +3,4 @@ def main() -> None:
     print('bye')
 
 
-main
+    
