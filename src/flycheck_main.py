@@ -50,7 +50,7 @@ def ydl_opts() -> Set[str]:
     }
 
 
-A = 
+A = str
 def build_prog():
 
 def main() -> None:
