@@ -60,7 +60,7 @@ def init() -> A:
     return sys.argv[1]
 
 
-def pipe(f: Callable) -> Callable:
+def pipe(f: Callable, ) -> Callable:
     idx: int = -1
 
     def p(in_arg):
@@ -75,10 +75,7 @@ def pipe(f: Callable) -> Callable:
 
 
 def build_prog() -> Callable:
-    prog: List[Callable] = [
-        lambda x: (x, ydl_opts()),
-        lambda x: x
-    ]
+    prog: List[Callable] = [lambda x: (x, ydl_opts()), lambda x: x]
     wrap = list(map(pipe, prog))
 
     return compose(*wrap)
