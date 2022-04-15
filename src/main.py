@@ -1,6 +1,7 @@
 import functools
 import yt_dlp
 from typing import Set
+from typing import List
 
 
 def compose(*functions):
@@ -50,7 +51,12 @@ def ydl_opts() -> Set[str]:
     }
 
 
-def buid
+A = str
+Z = str
+def build_prog(a: A) -> Z:
+    prog: List[str] = [
+        lambda a: a
+    ]
 
 def main() -> None:
     print('hi')
