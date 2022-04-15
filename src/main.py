@@ -2,6 +2,7 @@ import functools
 import yt_dlp
 from typing import Set
 from typing import List
+from typing import Callable
 
 
 def compose(*functions):
@@ -66,7 +67,9 @@ def init() -> A:
 
 
 def build_prog(a: A) -> Z:
-    prog: List[str] = [
+    prog: Tuple[
+
+    ] = [
         lambda a: a
     ]
 
