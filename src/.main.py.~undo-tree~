@@ -1,0 +1,6 @@
+(undo-tree-save-format-version . 1)
+"da39a3ee5e6b4b0d3255bfef95601890afd80709"
+[nil nil nil nil (25177 54708 693398 440000) 0 nil]
+([nil current ((#("print('hi')
+" 0 5 (fontified t face font-lock-keyword-face) 5 6 (fontified t face (rainbow-delimiters-depth-1-face)) 6 10 (fontified t face font-lock-string-face) 10 11 (fontified t face (rainbow-delimiters-depth-1-face)) 11 12 (fontified t)) . 1) (undo-tree-id0 . -5) (undo-tree-id1 . -11) (undo-tree-id2 . -12) (undo-tree-id3 . -12) (undo-tree-id4 . -12) (undo-tree-id5 . -12) (undo-tree-id6 . -12) (undo-tree-id7 . -12) (undo-tree-id8 . -12) (undo-tree-id9 . -12) (undo-tree-id10 . -12) (undo-tree-id11 . -12) (undo-tree-id12 . -12) (undo-tree-id13 . -12) (undo-tree-id14 . -12) (undo-tree-id15 . -12) (undo-tree-id16 . -12) (undo-tree-id17 . -12) (undo-tree-id18 . -12) (undo-tree-id19 . -12) (undo-tree-id20 . -12) (undo-tree-id21 . -12) 13 (t 25177 53967 182989 844000)) nil (25177 54708 693392 308000) 0 nil])
+nil
