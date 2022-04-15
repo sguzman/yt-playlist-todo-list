@@ -1,4 +1,6 @@
 import functools
+from typing import Callable, List, Set
+
 import yt_dlp
 from typing import Set
 from typing import List
@@ -6,14 +8,11 @@ from typing import Callable
 
 
 def compose(*functions):
-    return functools.reduce(
-        lambda f, g: lambda x: f(g(x)),
-        functions,
-        lambda x: x)
+    return functools.reduce(lambda f, g: lambda x: f(g(x)), functions,
+                            lambda x: x)
 
 
 def make_markdown_table(array):
-
     """ Input: Python list with rows of table as lists
                First element as header.
         Output: String to put into a .md file
@@ -51,9 +50,7 @@ def build_vid_url(s: str) -> str:
 
 
 def ydl_opts() -> Set[str]:
-    return {
-        '--get-id'
-    }
+    return {'--get-id'}
 
 
 A = str
@@ -67,11 +64,7 @@ def init() -> A:
 
 
 def build_prog(a: A) -> Z:
-    prog: Tuple[
-        Callable[A, A]
-    ] = [
-        lambda a: a
-    ]
+    prog: Tuple[Callable[A, A]] = [lambda a: a]
 
     compose(*prog)
 
