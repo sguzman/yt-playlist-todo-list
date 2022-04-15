@@ -1,5 +1,5 @@
 import functools
-from typing import Callable, List, Set
+from typing import Callable, List, Set, Tuple
 
 import yt_dlp
 
