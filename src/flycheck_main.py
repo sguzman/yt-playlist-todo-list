@@ -62,7 +62,7 @@ Z = str
 def init() -> A:
     import sys
 
-    re
+    return sys.argv[1]
 
 
 def build_prog(a: A) -> Z:
