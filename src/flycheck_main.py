@@ -46,7 +46,7 @@ def build_vid_url(s: str) -> str:
     return f'https://www.youtube.com/watch?v={id}'
 
 
-def ydl_opts() -> Dict[str]:
+def ydl_opts() -> Dict[str, str]:
     return {'format': 'bestaudio'}
 
 
