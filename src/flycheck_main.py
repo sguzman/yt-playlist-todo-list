@@ -70,7 +70,7 @@ def main() -> None:
     print('hi')
 
     arg = init()
-    prog = build_prog(arg)
+    prog = build_prog()
     prog()
     print('bye')
 
