@@ -60,7 +60,7 @@ def init() -> A:
     return sys.argv[1]
 
 
-def pipe(f: Callable, input):
+def pipe(f: Callable, ):
     idx: int = -1
 
 
