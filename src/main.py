@@ -1,5 +1,5 @@
 import functools
-from typing import Callable, List, Set, Tuple
+from typing import Callable, Dict, List, Set, Tuple
 
 import yt_dlp
 
@@ -46,8 +46,8 @@ def build_vid_url(s: str) -> str:
     return f'https://www.youtube.com/watch?v={id}'
 
 
-def ydl_opts() -> Set[str]:
-    return {'--get-id'}
+def ydl_opts() -> Dict[str, str]:
+    return {'format': 'bestaudio'}
 
 
 A = str
@@ -60,23 +60,30 @@ def init() -> A:
     return sys.argv[1]
 
 
-def pipe(f: Callable) -> Callable:
-    idx: int = -1
+def pipe(t: Tuple[Callable, int]) -> Callable:
 
     def p(in_arg):
-        nonlocal idx
-        idx += 1
+        f = t[0]
+        n = t[1]
+
         out_arg = f(in_arg)
-        print(idx, in_arg, out_arg, f)
+        print(n, '->', in_arg, '<-', out_arg, f, sep='\n\t')
 
         return out_arg
 
     return p
 
 
-def build_prog() -> Callable[[A], Z]:
-    prog: List[Callable] = [lambda x: x]
-    wrap = list(map(pipe, prog))
+def build_prog() -> Callable:
+    prog: List[Callable] = [
+        lambda x: x.split('/'), lambda x: x[2], lambda x: x.split('.'),
+        lambda x: x[1]
+    ]
+    idx = list(range(len(prog)))
+    idx.reverse()
+
+    app = zip(prog, idx)
+    wrap = list(map(pipe, app))
 
     return compose(*wrap)
 
