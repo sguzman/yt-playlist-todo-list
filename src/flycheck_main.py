@@ -52,7 +52,8 @@ def ydl_opts() -> Set[str]:
 
 A = str
 Z = str
-def build_prog(a: A) -> Z:Z
+def build_prog(a: A) -> Z:
+
 
 def main() -> None:
     print('hi')
