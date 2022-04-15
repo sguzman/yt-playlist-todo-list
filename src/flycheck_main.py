@@ -76,7 +76,7 @@ def pipe(t: Tuple[int, Callable]) -> Callable:
 
 def build_prog() -> Callable:
     prog: List[Callable] = [lambda x: (x, ydl_opts()), lambda x: x]
-    idx = range()
+    idx = range(L)
     wrap = list(map(pipe, enumerate(prog)))
 
     return compose(*wrap)
