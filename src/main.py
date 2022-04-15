@@ -1,5 +1,5 @@
 import functools
-from typing import Callable, List, Set, Tuple
+from typing import Callable, Dict, List, Set, Tuple
 
 import yt_dlp
 
@@ -46,7 +46,7 @@ def build_vid_url(s: str) -> str:
     return f'https://www.youtube.com/watch?v={id}'
 
 
-def ydl_opts() -> Set[str]:
+def ydl_opts() -> Dict[str, str]:
     return {'format': 'bestaudio'}
 
 
