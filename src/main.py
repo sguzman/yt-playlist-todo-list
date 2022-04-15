@@ -85,6 +85,7 @@ def main() -> None:
     print('hi')
 
     arg = init()
+    print(arg)
     prog = build_prog()
     prog(arg)
     print('bye')
