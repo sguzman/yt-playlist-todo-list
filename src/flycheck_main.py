@@ -71,7 +71,7 @@ def main() -> None:
 
     arg = init()
     prog = build_prog(arg)
-
+    prog()
     print('bye')
 
 
