@@ -3,4 +3,5 @@ def main() -> None:
     print('bye')
 
 
-if __name__ == '__main__'
+if __name__ == '__main__':
+    
