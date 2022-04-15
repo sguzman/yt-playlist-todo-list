@@ -1,3 +1,6 @@
+import yt_dlp
+
+
 def main() -> None:
     print('hi')
     print('bye')
