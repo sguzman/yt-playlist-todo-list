@@ -3,6 +3,8 @@ import yt_dlp
 from typing import Set
 
 
+
+
 def make_markdown_table(array):
 
     """ Input: Python list with rows of table as lists
