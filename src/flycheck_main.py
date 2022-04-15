@@ -62,10 +62,8 @@ def init() -> A:
 
 def pipe(f: Callable, n: int) -> Callable:
     def p(in_arg):
-        nonlocal idx
-        idx += 1
         out_arg = f(in_arg)
-        print(idx, in_arg, out_arg, f, sep='\n\t')
+        print(n, in_arg, out_arg, f, sep='\n\t')
 
         return out_arg
 
