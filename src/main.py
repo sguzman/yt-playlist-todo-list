@@ -67,7 +67,7 @@ def pipe(f: Callable) -> Callable:
         nonlocal idx
         idx += 1
         out_arg = f(in_arg)
-        print(idx, in_arg, out_arg, f)
+        print(idx, in_arg, out_arg, f, sep='\n\t')
 
         return out_arg
 
